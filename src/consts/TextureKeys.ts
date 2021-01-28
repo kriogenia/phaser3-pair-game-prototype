@@ -1,5 +1,6 @@
 enum TextureKeys {
-	Background = 'background'
+	Background = 'background',
+	Cards = 'cards'
 }
 
 export default TextureKeys;
