@@ -1,4 +1,5 @@
-import Phaser from 'phaser'
+import Phaser from 'phaser';
+import TextureKeys from '../consts/TextureKeys';
 
 export default class BoardScene extends Phaser.Scene
 {
@@ -9,7 +10,7 @@ export default class BoardScene extends Phaser.Scene
 
 	preload()
     {
-		this.load.image('background', 'bgs/blue.png');
+		this.load.image(TextureKeys.Background, 'bgs/blue.png');
     }
 
     create()

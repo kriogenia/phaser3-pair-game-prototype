@@ -1,7 +1,7 @@
 {
-	"name": "phaser3-parcel-template",
+	"name": "pairs-game-prototype",
 	"version": "1.0.0",
-	"description": "A typescript template project for Phaser 3 using Parceljs",
+	"description": "A typescript prototype of Pairs Game using Phaser 3",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir dist",
@@ -25,6 +25,7 @@
 		"typescript": "^3.8.3"
 	},
 	"dependencies": {
+		"consts": "^0.0.2",
 		"phaser": "^3.50.1"
 	},
 	"parcelCleanPaths": [
