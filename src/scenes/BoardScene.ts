@@ -28,15 +28,46 @@ export default class BoardScene extends Phaser.Scene
 
     create()
     {
+		/* Set background */
+		this.add.image(this.scale.width * 0.5, this.scale.height * 0.5, 'background');
+		/* Create the cards */
+		this.generateCards();
+		
+	}
+
+	/**
+	 * Fill the Cards array with pairs of cards
+	 */
+	private generateCards() : void
+	{
 		const width = this.scale.width;
 		const height = this.scale.height;
-		this.add.image(width * 0.5, height * 0.5, 'background');
+		const ids = this.generateIds();
 		for(let i = 0; i < DEFAULT_BOARD_SIZE; i++) {
 			const x = i % DEFAULT_MAX_COLUMNS * Math.floor(width / (DEFAULT_MAX_COLUMNS + 1)) + Math.floor(width / (DEFAULT_MAX_COLUMNS + 1));
 			const y = Math.floor(i / DEFAULT_MAX_COLUMNS) * Math.floor(height / (this.rows + 1)) + Math.floor(height / (this.rows + 1));
-			const card = new CardActor(this, x, y, 0);
+			const card = new CardActor(this, x, y, ids[i]);
 			this.cards.push(card);
 			this.add.existing(card);
 		}
-    }
+	}
+	
+	/**
+	 * Generates a shuffle array of duplicated numbers
+	 */
+	private generateIds() : number[]
+	{
+		const ids = new Array();
+		/* Create the ids array */
+		for (let i = 0; i < DEFAULT_BOARD_SIZE * 0.5; i++) {
+			ids.push(i);
+			ids.push(i);
+		}
+		/* And shuffle it */
+		for (let i = ids.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[ids[i], ids[j]] = [ids[j], ids[i]];
+		}
+		return ids;
+	}
 }
