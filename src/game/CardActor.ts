@@ -10,7 +10,7 @@ export default class CardActor extends Phaser.GameObjects.Sprite
 	/* Card id */
 	id!: number;
 	/* Card state */
-	private isPressed: boolean = false;
+	private isPressed = false;
 
 	constructor(scene: Phaser.Scene, x: number, y: number, id: number)
 	{

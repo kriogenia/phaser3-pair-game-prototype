@@ -42,7 +42,7 @@ export default class BoardScene extends Phaser.Scene
 	 * Card pressed event. Checks if the player made a pair or not and calls for the consequent action
 	 * @param pressed 	Card pressed
 	 */
-	cardPressed = (pressed: CardActor) : void => 
+	cardPressed = (pressed: CardActor): void => 
 	{
 		// Second pressed card
 		if (this.selected) {
@@ -59,7 +59,7 @@ export default class BoardScene extends Phaser.Scene
 	/**
 	 * Sets the pair as matched and checks for the win
 	 */
-	private matchPair = () : void => 
+	private matchPair = (): void => 
 	{
 		console.log("Pair match");
 		this.selected = undefined;
@@ -71,7 +71,7 @@ export default class BoardScene extends Phaser.Scene
 	 * Hides both selected cards and unselects them
 	 * @param pressed 	Last selected card
 	 */
-	private hideCards = (pressed: CardActor) : void => 
+	private hideCards = (pressed: CardActor): void => 
 	{
 		console.log(pressed);
 		this.selected?.hide();
@@ -82,7 +82,7 @@ export default class BoardScene extends Phaser.Scene
 	/**
 	 * Checks and notifies when the player wins
 	 */
-	private checkWin = () => 
+	private checkWin = (): void => 
 	{
 		if (!this.pairsToMatch) {
 			setTimeout(() => alert("You win"), 100);
@@ -92,7 +92,7 @@ export default class BoardScene extends Phaser.Scene
 	/**
 	 * Fill the Cards array with pairs of cards
 	 */
-	private generateCards = () : void =>
+	private generateCards = (): void =>
 	{
 		const width = this.scale.width;
 		const height = this.scale.height;
@@ -108,9 +108,9 @@ export default class BoardScene extends Phaser.Scene
 	/**
 	 * Generates a shuffle array of duplicated numbers
 	 */
-	private generateIds = () : number[] =>
+	private generateIds = (): number[] =>
 	{
-		const ids = new Array();
+		const ids: number[] = [];
 		/* Create the ids array */
 		for (let i = 0; i < DEFAULT_BOARD_SIZE * 0.5; i++) {
 			ids.push(i);
