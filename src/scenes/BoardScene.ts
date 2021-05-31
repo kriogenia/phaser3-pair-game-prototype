@@ -2,8 +2,8 @@ import Phaser from 'phaser';
 import CardActor from '~/game/CardActor';
 import TextureKeys from '~/consts/TextureKeys';
 
-const DEFAULT_BOARD_SIZE = 12;
-const DEFAULT_MAX_COLUMNS = 4;
+const DEFAULT_BOARD_SIZE = 10;
+const DEFAULT_MAX_COLUMNS = 5;
 
 export default class BoardScene extends Phaser.Scene
 {
