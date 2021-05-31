@@ -58,6 +58,25 @@ npm run build
 
 Production files will be placed in the `dist` folder. Then upload those files to a web server. 🎉
 
+## Configuration
+
+The settings file on the `src` folder allows you to change the width and height of the frame of game and the game board. 
+
 ## License
 
 [MIT License](https://github.com/ourcade/phaser3-typescript-parcel-template/blob/master/LICENSE)
+
+## Resources
+
+### Graphics
+* Builder: [https://openclipart.org/detail/301173/male-builder](https://openclipart.org/detail/301173/male-builder)
+* Businessman: [https://openclipart.org/detail/315619/businessman-2](https://openclipart.org/detail/315619/businessman-2)
+* Cooker: [https://openclipart.org/detail/321932/a-british-cook-serving-bangers-and-mash](https://openclipart.org/detail/321932/a-british-cook-serving-bangers-and-mash)
+* Doctor: [https://openclipart.org/detail/304872/female-doctor](https://openclipart.org/detail/304872/female-doctor)
+* Farmer: [https://openclipart.org/detail/301146/cartoon-farmer](https://openclipart.org/detail/301146/cartoon-farmer)
+* Fireman: [https://openclipart.org/detail/90109/fireman-alarm-mimooh-01](https://openclipart.org/detail/90109/fireman-alarm-mimooh-01)
+* Football player: [https://openclipart.org/detail/302043/football-player-spain](https://openclipart.org/detail/302043/football-player-spain)
+* Mechanic: [https://openclipart.org/detail/325532/mechanic](https://openclipart.org/detail/325532/mechanic)
+* Policeman: [https://openclipart.org/detail/171519/security](https://openclipart.org/detail/171519/security)
+* Scientist: [https://openclipart.org/detail/271566/scientist](https://openclipart.org/detail/271566/scientist)
+* Trainer: [https://openclipart.org/detail/326146/gym-teacher](https://openclipart.org/detail/326146/gym-teacher)

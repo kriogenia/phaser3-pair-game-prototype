@@ -1,11 +1,11 @@
-import Phaser from 'phaser'
-
-import BoardScene from './scenes/BoardScene'
+import Phaser from 'phaser';
+import BoardScene from './scenes/BoardScene';
+import Settings from './settings';
 
 const config: Phaser.Types.Core.GameConfig = {
 	type: Phaser.AUTO,
-	width: 640,
-	height: 480,
+	width: Settings.width,
+	height: Settings.height,
 	scene: [BoardScene]
 }
 
